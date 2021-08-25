@@ -39,7 +39,7 @@ function openModal(e) {
   document.querySelector(".modalWrapper").classList.remove("hidden");
   document.querySelector("#infoModal h2").textContent = this.querySelector(".fullname").textContent;
   document.querySelector("#infoModal p").textContent = this.querySelector(".movie").textContent;
-  copy.querySelector("main").addEventListener("click", closeModal);
+  document.querySelector(".modalWrapper").addEventListener("click", closeModal);
 }
 
 function closeModal() {

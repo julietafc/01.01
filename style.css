@@ -12,6 +12,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 1.4em;
+}
+
 #actorsList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(208px, 332px));

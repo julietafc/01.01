@@ -32,3 +32,16 @@ function showActor(actor) {
   // append
   parent.appendChild(copy);
 }
+
+function openModal(e) {
+  console.log(this);
+  console.log("hola");
+  document.querySelector(".modalWrapper").classList.remove("hidden");
+  document.querySelector("#infoModal h2").textContent = this.querySelector(".fullname").textContent;
+  document.querySelector("#infoModal p").textContent = this.querySelector(".movie").textContent;
+  copy.querySelector("main").addEventListener("click", closeModal);
+}
+
+function closeModal() {
+  document.querySelector(".modalWrapper").classList.add("hidden");
+}
